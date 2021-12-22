@@ -21,6 +21,7 @@ a = np.array([10,20,30,40])
 print(f'dimensions of the array a ==> {a.ndim}')
 # print(" array ")
 print(np.diag(a,k=2))
+print(np.diag(a,k=2))
 # s = np.random.uniform(20,30,size=1000000)
 
 # a = np.array([10,20,30,40,50])
