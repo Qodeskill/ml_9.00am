@@ -38,19 +38,104 @@ import numpy as np
 # print(f"a[-1][1] ==> {a[-1][1]}")
 
 
-a = np.array([[1,2,3],[4,5,6],[7,8,9]])
-print(f"Shape of the array a : {a.shape}")
+# a = np.array([[1,2,3],[4,5,6],[7,8,9]])
+# print(f"Shape of the array a : {a.shape}")
 
-print(f"a[1][-1] ==> {a[1][-1]}")
-print(f"a[-2][-1] ==> {a[-2][-1]}")
-print(f"a[-2][2] ==> {a[-2][2]}")
+# print(f"a[1][-1] ==> {a[1][-1]}")
+# print(f"a[-2][-1] ==> {a[-2][-1]}")
+# print(f"a[-2][2] ==> {a[-2][2]}")
 
 
-# l = [[[1,2,3],[4,5,6],[7,8,9]],[[10,11,12],[13,14,15],[16,17,18]]]
-# a = np.array(l)
+l = [[[1,2,3],[4,5,6],[7,8,9]],[[10,11,12],[13,14,15],[16,17,18]]]
+# print(type(l))
+a = np.array(l)
+# print(type(a))
+
+# print(f'dimensions of the array a ==> {a.ndim}')
 # print(f"Shape of the array a ==> {a.shape}")
+# print(a)
 # print("To access the element 14 from the 3-D array")
-# print(f"a[1][1][1] ==> {a[1][1][1]}")
+print(f"a[0][0][1] ==> {a[1][2][1]}")
 # print(f"a[-1][-2][-2] ==> {a[-1][-2][-2]}")
 # print(f"a[1][-2][-2] ==> {a[1][-2][-2]}")
 # print(f"a[-1][1][-2] ==> {a[-1][1][-2]}")
+
+
+# view
+# a = np.array([10,20,30,40])
+# b = a.view()
+# print(f"Original Array(a) ==> {a}")
+# print(f"View of the Array(b) ==> {b}")
+# print("*"*80)
+# print("Changing the values of a, it will reflect to view(b) also :")
+# a[0]=7777
+# print(f"Changed Array(a) ==> {a}")
+# print(f"View of the Array(b) ==> {b}")
+# print("*"*80)
+# print("Changing the values of view(b), it will reflect to a also :")
+# b[-1]=999
+# print(f"Changed view Array(b) ==> {b}")
+# print(f"Original Array(a) ==> {a}")
+
+
+
+# copy
+
+# a = np.array([10,20,30,40])
+# b = a.copy()
+# print(f"Original Array(a) ==> {a}")
+# print(f"copy of the Array(b) ==> {b}")
+# print("*"*60)
+# print("Changing the values of a, it will not reflect to copy(b) ")
+# a[0]=7777
+# print(f"Changed Array(a) ==> {a}")
+# print(f"copy of the Array(b) ==> {b}")
+# print("*"*60)
+# print("Changing the values of copy(b), it will not reflect to a ")
+# b[-1]=999
+# print(f"Changed copy Array(b) ==> {b}")
+# print(f"Original Array(a) ==> {a}")
+
+
+# to know the position of an element in the array
+# np.where(a==88)
+
+# Slicing ==> group of elements which are in order
+
+# l = [10,20,30,40,50,60,70]
+# l[2:6] 
+
+
+# l[-6:-2]
+
+# If we are not specifying begin index then default is 0
+# l[:3] 
+
+# l[2:] # from 2nd index to last
+
+
+# l = [10,20,30,40,50,60,70,80,90]
+# l[2:6:2] # from 2nd index to 6-1 index with step 2
+
+
+# a = np.arange(10,101,10)
+# a[2:5] # from 2nd index to 5-1 index
+
+# a[::1] # entire array
+
+# Slice operator on 2-D numpy array
+
+# a = np.array([[10,20],[30,40],[50,60]])
+# a = np.array([[10,20],[30,40],[50,60]])
+# b = a[0,:] # row is in index form, it will return 1-D array
+# c = a[0:1,:] # it will return 2-D array
+# print(f"The dimension of b : {b.ndim} and the array b : {b} ")
+# print(f"The dimension of c : {c.ndim} and the array c : {c} ")
+
+# print(f"a[0:2,1:2] value is : \n {a[0:2,1:2]}")
+# print(f"a[:2,1:] value is : \n {a[:2,1:]}")
+
+# print(f"a[0::2,:] value is : \n {a[0::2,:]}")
+# print(f"a[::2,:] value is : \n {a[::2,:]}")
+
+
