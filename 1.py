@@ -46,16 +46,16 @@ import numpy as np
 # print(f"a[-2][2] ==> {a[-2][2]}")
 
 
-l = [[[1,2,3],[4,5,6],[7,8,9]],[[10,11,12],[13,14,15],[16,17,18]]]
+# l = [[[1,2,3],[4,5,6],[7,8,9]],[[10,11,12],[13,14,15],[16,17,18]]]
 # print(type(l))
-a = np.array(l)
+# a = np.array(l)
 # print(type(a))
 
 # print(f'dimensions of the array a ==> {a.ndim}')
 # print(f"Shape of the array a ==> {a.shape}")
 # print(a)
 # print("To access the element 14 from the 3-D array")
-print(f"a[0][0][1] ==> {a[1][2][1]}")
+# print(f"a[0][0][1] ==> {a[1][2][1]}")
 # print(f"a[-1][-2][-2] ==> {a[-1][-2][-2]}")
 # print(f"a[1][-2][-2] ==> {a[1][-2][-2]}")
 # print(f"a[-1][1][-2] ==> {a[-1][1][-2]}")
@@ -125,7 +125,7 @@ print(f"a[0][0][1] ==> {a[1][2][1]}")
 
 # Slice operator on 2-D numpy array
 
-# a = np.array([[10,20],[30,40],[50,60]])
+
 # a = np.array([[10,20],[30,40],[50,60]])
 # b = a[0,:] # row is in index form, it will return 1-D array
 # c = a[0:1,:] # it will return 2-D array
@@ -139,3 +139,5 @@ print(f"a[0][0][1] ==> {a[1][2][1]}")
 # print(f"a[::2,:] value is : \n {a[::2,:]}")
 
 
+a = np.array([[10,20],[30,40],[50,60]])
+print(a)
