@@ -124,11 +124,90 @@ import numpy as np
 # print(f"a+b value is :: \n {a+b}")
 
 
-a = np.array([10,20,30])
-b = np.array([40])
-print(f"Shape of a : {a.shape}")
-print(f"Shape of b : {b.shape}")
-print(f"a+b : {a*b}")
+# a = np.array([10,20,30])
+# b = np.array([40])
+# print(f"Shape of a : {a.shape}")
+# print(f"Shape of b : {b.shape}")
+# print(f"a+b : {a*b}")
+
+# 30/12
+
+# --Broadcasting 
+# https://www.youtube.com/watch?v=tuKHsfAehz4
+
+# • Generally Arithmetic operations are performed between two arrays are having
+# same dimension, shape and size.
+# • Eventhough dimensions are different,shapes are different and sizes are different
+# still some arithmetic operations are allowed by Broadcasting
+# • Broadcasting will be performed automatically by numpy itself and we are not
+# required to perform explicitly.
+# • Broadcasting won't be possible in all cases.
+# • Numpy follow some rules to perform Broadcasting. If the rules are satisfied then
+# only broadcasting will be performed internally while performing arithmetic
+# operations.
+
+# --Note
+
+# • If both arrays have same dimension, same shape and same size then broadcasting is
+# not required.
+# • Different dimensions or different shapes or different sizes then only broadcasting is
+# required.
+
+# Rule-1: Make sure both arrays should have same dimension
+# • If the two arrays are of different dimensions, numpy will make equal dimensions.
+# Padded 1's in the shape of lesser dimension array on the left side, until both arrays
+# have same diemension
+# Eg: Before
+# • a array has shape :: (4,3) ----> 2-D array
+# • b array has shape :: (3,) ----> 1-D array
+# After
+# • Both arrays a and b are different dimensions.
+# • By Rule-1 Numpy will add 1's to the lesser dimension array(b).
+# Now the array a is ----> (4,3)
+# and the array b becomes ::: (1,3) -- By using Rule-1
+# • Now Both arrays are in same dimension array a:: 2-D and array-b :: 2-D
+# a array has shape :: (4,3) ----> 2-D array
+# b array has shape :: (1,3) ----> 2-D array
+
+# # Rule-2:
+# • If the size of two arrays does not match in any dimension, then the arrays with size
+# equal to 1 in that dimension will be increased to size of other dimension to match
+# Eg:
+# • From Rule-1 we got a ==> (4,3) and b ==> (1,3)
+# • Here first co-ordinate of a => 4 and b => 1. Sizes are different
+# • According to Rule-2 the array with size 1 (here arrray b with size 1) will be
+# increased to 4 (corresponding size of array a).
+# • Second co-ordinate of a => 3 and b => 3. Sizes are matched.
+# • After applying Rule-2 the dimensions of a and b are changed as follows
+# a array has shape ==> (4,3) ====> 2-D array
+# b array has shape ==> (4,3) ====> 2-D array
+# • Now both the arrays are having same dimension, shape and size. So we can perform
+# any arithmetic operations
+
+# a = np.array([10,20,30,40])
+# b = np.array([1,2])
+# print(a+b)
 
 
+# a = np.array([10,20,30])
+# b = np.array([40])
 
+# a = np.arange(15).reshape(3,5)
+# b = np.arange(5)
+# print(f"Shape of a : {a.shape} and Dim of a : {a.ndim}")
+# print(f"Shape of b : {b.shape} and Dim of b : {b.ndim}")
+# print(a)
+# print(b)
+
+# a = np.arange(3)
+# b = np.arange(3).reshape(3,1)
+# print(f"Shape of a : {a.shape} and Dim of a : {a.ndim}")
+# print(f"Shape of b : {b.shape} and Dim of b : {b.ndim}")
+# print(a)
+# print(b)
+
+# print(a+b)
+
+# print(f"Shape of a : {a.shape}")
+# print(f"Shape of b : {b.shape}")
+# print(f"a+b : {a+b}")
