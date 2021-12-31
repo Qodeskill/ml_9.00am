@@ -213,3 +213,53 @@ import numpy as np
 # print(f"a+b : {a+b}")
 
 # new Commit 3012 852pm
+# 31/12
+
+# a = np.arange(9).reshape(3,3)
+# b = np.resize(a,(5,2))
+# print(f"Original array : {a}")
+# print(f"Reshaped array :\n {b}")
+
+# a = np.arange(6).reshape(3,2)
+# b = a.flatten('F') # F fortarn style
+# b = a.flatten() #c lng style
+# print(f"Original array :\n {a}")
+# print(f"Flatten array :\n {b}")
+
+# import numpy as np
+# a = np.arange(9).reshape(3,3)
+# # atrans = np.transpose(a)
+# atrans = np.transpose(a,axes=(1,0))
+# atrans1 = np.transpose(a,axes=(-1,0))
+# print(f"Original Array : \n {a}")
+# # print(f"Transposed Array : \n {atrans}")
+# print(f"Transposed Array : \n {atrans1}")
+
+# a = np.arange(1,7).reshape(2,3)
+# atrans = np.transpose(a)
+# atrans = np.transpose(a,axes=(0,1))
+# print(f"Original Array : \n {a}")
+# print(f"Transposed Array : \n {atrans}")
+# print(f"Original Array shape : {a.shape}")
+# print(f"Transposed Array shape: {atrans.shape}")
+
+# a = np.arange(1,7).reshape(2,3)
+# atrans = np.transpose(a,axes=(0,1))
+# print(f"Original Array : \n {a}")
+# print(f"Transposed Array : \n {atrans}")
+# print(f"Original Array shape : {a.shape}")
+# print(f"Transposed Array shape: {atrans.shape}")
+
+# a= np.arange(16).reshape((2, 2, 4))
+# atrans = np.transpose(a)
+# print(f"Original Array : \n {a}")
+# print(f"Transposed Array : \n {atrans}")
+# print(f"Original Array shape : {a.shape}")
+# print(f"Transposed Array shape: {atrans.shape}")
+
+# a= np.arange(1,28).reshape((3,3, 3))
+# atrans = np.transpose(a)
+# print(f"Original Array : \n {a}")
+# print(f"Transposed Array : \n {atrans}")
+# print(f"Original Array shape : {a.shape}")
+# print(f"Transposed Array shape: {atrans.shape}")
