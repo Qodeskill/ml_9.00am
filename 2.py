@@ -263,3 +263,67 @@ import numpy as np
 # print(f"Transposed Array : \n {atrans}")
 # print(f"Original Array shape : {a.shape}")
 # print(f"Transposed Array shape: {atrans.shape}")
+
+# 1/1/22
+
+# a = np.arange(1,5)
+# print(a)
+# b = np.arange(1,6)
+# print(b)
+# c = np.arange(1,4)
+# print(c)
+# d = np.concatenate((a,b,c))
+# print(d)
+
+# a = np.array([[1,2],[3,4]])
+# print(a)
+# b = np.array([[5,6],[7,8]])
+# print(b)
+
+## Vertical Concatenation Default axis 0
+
+# vcon = np.concatenate((a,b)) 
+# vcon1 = np.concatenate((a,b),axis=0)
+# print(vcon)
+# print(vcon1)
+
+## Horizontal Concateation
+# hcon = np.concatenate((b,a),axis=1) 
+# print(hcon)
+
+# flatt = np.concatenate((a,b),axis=None) ## flatten and then concatenation
+# print(flatt)
+
+# print(f"array a ==> \n {a}")
+# print(f"array b ==> \n {b}")
+# print(f"Without specifying axis parameter ==> \n {vcon}")
+# print(f"Specifying axis=0 a ==> \n {vcon1}")
+# print(f"Specifying axis=1 ==> \n {hcon}")
+# print(f"Specifying axis=None ==> \n {flatt}")
+
+# • We can join any number of arrays, but all arrays should be of same dimension.
+# • The sizes of all axes, except concatenation axis should be same.
+# • The shapes of resultant array and out array must be same.
+
+# a = np.arange(6).reshape(2,3)
+
+# b = np.arange(15).reshape(5,3)
+# b = np.arange(15).reshape(3,5)
+# print(f"array a ==> \n {a}")
+# print(f"array b ==> \n {b}")
+
+# vcon = np.concatenate((a,b),axis=0)
+# print(f"Vertical Concatenation array ==> \n{vcon}")
+
+# hcon = np.concatenate((b,a),axis=1)
+# print(f"Horizontal Concatenation array ==> \n{hcon}")
+
+# a = np.arange(4)
+# b = np.arange(5)
+# c = np.empty(9) # default dtype is float
+# print(c)
+# d = np.concatenate((a,b),dtype=str) # dtype=str
+# print(f"out c array ==> \n{c}")
+# print(f"d array ==> \n{d}")
+
+# https://download.cnet.com/KP-Typing-Tutor/3000-2051_4-10421535.html
