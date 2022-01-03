@@ -327,3 +327,70 @@ import numpy as np
 # print(f"d array ==> \n{d}")
 
 # https://download.cnet.com/KP-Typing-Tutor/3000-2051_4-10421535.html
+
+## 3/1/22
+
+
+
+# a = np.arange(1,5)
+# a = np.arange(1,13).reshape(3,4)
+
+# b = np.transpose(a,a)
+# print(a)
+# print(a.transpose())
+# print(a.transpose(0,1))
+
+
+
+
+
+# a = np.arange(1,25).reshape(2,3,4)
+# a = np.arange(1,13).reshape(3,4)
+# print(a)
+
+# print(f'original   matrix a {a.shape}')
+# print(f'transpose  2 1 0 {a.transpose(2,1,0).shape}')
+# print(f'transpose  2 0 1 {a.transpose(2,0,1).shape}')
+# print(f'transpose  1 0 2 {a.transpose(1 ,0, 2).shape}')
+# print(f'transpose  1 2 0 {a.transpose(1 ,2, 0).shape}')
+# print(f'transpose  0 2 1 {a.transpose(0 ,2, 1).shape}')
+
+print(f'transpose  2 1 0 {np.rolaxix(a,start=0)}')
+print(f'transpose  2 0 1 {np.rolaxix(a,start=0)}')
+print(f'transpose  1 0 2 {np.rolaxix(a,start=0)}')
+print(f'transpose  1 2 0 {np.rolaxix(a,start=0)}')
+print(f'transpose  0 2 1 {np.rolaxix(a,start=0)}')
+
+
+
+
+
+# a = np.array([10,20,30])
+# b = np.array([40,50,60])
+
+
+## stack()
+# resultant_array = np.stack((a,b))
+# resultant_array = np.stack((a,b),axis=1) 
+# print(resultant_array)
+
+## vstack()
+## hstack()
+## dstack()
+
+
+# a = np.array([[1,2,3],[4,5,6]])
+# b = np.array([[7,8,9],[10,11,12]])
+# np.stack((a,b)) 
+
+# a = np.arange(1,10).reshape(3,3)
+# b = np.arange(9,0,-1).reshape(3,3)
+
+# print(a)
+# print(b)
+
+# # print(a*b)
+
+# print(a@b)
+# print(a.dot(b))
+
