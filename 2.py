@@ -344,7 +344,7 @@ import numpy as np
 
 
 
-# a = np.arange(1,25).reshape(2,3,4)
+a = np.arange(1,25).reshape(2,3,4)
 # a = np.arange(1,13).reshape(3,4)
 # print(a)
 
@@ -355,14 +355,9 @@ import numpy as np
 # print(f'transpose  1 2 0 {a.transpose(1 ,2, 0).shape}')
 # print(f'transpose  0 2 1 {a.transpose(0 ,2, 1).shape}')
 
-print(f'transpose  2 1 0 {np.rolaxix(a,start=0)}')
-print(f'transpose  2 0 1 {np.rolaxix(a,start=0)}')
-print(f'transpose  1 0 2 {np.rolaxix(a,start=0)}')
-print(f'transpose  1 2 0 {np.rolaxix(a,start=0)}')
-print(f'transpose  0 2 1 {np.rolaxix(a,start=0)}')
-
-
-
+print(f'Rollaxis 0 {np.rollaxis(a,0).shape}')
+print(f'Rollaxis 1 {np.rollaxis(a,1).shape}')
+print(f'Rollaxis 2 {np.rollaxis(a,2).shape}')
 
 
 # a = np.array([10,20,30])
