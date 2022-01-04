@@ -344,7 +344,7 @@ import numpy as np
 
 
 
-a = np.arange(1,25).reshape(2,3,4)
+# a = np.arange(1,25).reshape(2,3,4)
 # a = np.arange(1,13).reshape(3,4)
 # print(a)
 
@@ -355,16 +355,19 @@ a = np.arange(1,25).reshape(2,3,4)
 # print(f'transpose  1 2 0 {a.transpose(1 ,2, 0).shape}')
 # print(f'transpose  0 2 1 {a.transpose(0 ,2, 1).shape}')
 
-print(f'Rollaxis 0 {np.rollaxis(a,0).shape}')
-print(f'Rollaxis 1 {np.rollaxis(a,1).shape}')
-print(f'Rollaxis 2 {np.rollaxis(a,2).shape}')
+# print(f'Rollaxis 0 {np.rollaxis(a,0).shape}')
+# print(f'Rollaxis 1 {np.rollaxis(a,1).shape}')
+# print(f'Rollaxis 2 {np.rollaxis(a,2).shape}')
 
+# print(a@b)
+# print(a.dot(b))
 
+##4/1/22
+
+## stack()
 # a = np.array([10,20,30])
 # b = np.array([40,50,60])
 
-
-## stack()
 # resultant_array = np.stack((a,b))
 # resultant_array = np.stack((a,b),axis=1) 
 # print(resultant_array)
@@ -373,10 +376,10 @@ print(f'Rollaxis 2 {np.rollaxis(a,2).shape}')
 ## hstack()
 ## dstack()
 
-
 # a = np.array([[1,2,3],[4,5,6]])
 # b = np.array([[7,8,9],[10,11,12]])
-# np.stack((a,b)) 
+# c = np.stack((a,b))
+# print(c.transpose()) 
 
 # a = np.arange(1,10).reshape(3,3)
 # b = np.arange(9,0,-1).reshape(3,3)
@@ -386,6 +389,26 @@ print(f'Rollaxis 2 {np.rollaxis(a,2).shape}')
 
 # # print(a*b)
 
-# print(a@b)
-# print(a.dot(b))
+
+a = np.array([3,5,7,6,12,9,4,6,10,15])
+# b = np.where(a%2==0)
+# print(b)
+
+indices = np.where(a%2==0)
+print( indices)
+# print(a[a%2==0])
+
+
+# a = np.array([3,5,7,6,7,9,4,6,10,15])
+# b = np.where( a%2 == 0, 'even', 'odd')
+# print( a)
+# print( b)
+
+# a = np.arange(12).reshape(4,3)
+# b = np.where(a%5==0,9999,a)
+
+
+
+
+
 
