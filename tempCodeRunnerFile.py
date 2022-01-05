@@ -1,5 +1,7 @@
-
-a = np.array([3,5,7,6,7,9,4,6,10,15])
-b = np.where( a%2 == 0, 'even', 'odd')
-
-print(f"element { b} is {a} " )
+a = np.arange(6).reshape(3,2)
+b = np.matrix(a)
+print(f"type of a : type(a)")
+print(f"type of b : type(b)")
+print(f'ndarray :\n {a}')
+print(f'matrix :\n {b}')
+print(type(a))

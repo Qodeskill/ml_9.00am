@@ -387,15 +387,15 @@ import numpy as np
 # print(a)
 # print(b)
 
-# # print(a*b)
+## print(a*b)
+## 5/01/22
 
-
-a = np.array([3,5,7,6,12,9,4,6,10,15])
+# a = np.array([3,5,7,6,12,9,4,6,10,15])
 # b = np.where(a%2==0)
 # print(b)
 
-indices = np.where(a%2==0)
-print( indices)
+# indices = np.where(a%2==0)
+# print( indices)
 # print(a[a%2==0])
 
 
@@ -407,8 +407,70 @@ print( indices)
 # a = np.arange(12).reshape(4,3)
 # b = np.where(a%5==0,9999,a)
 
+# print("Element level multiplication ")
+
+# a = np.array([[10,20],[30,40]])
+# b = np.array([[1,2],[3,4]])
+# print(f"array a : \n {a}")
+# print(f"array b : \n {b}")
+
+# ele_mul = a*b
+# print(f"array b : \n {ele_mul}")
+
+## Matrix 
+
+# dot_product = np.dot(a,b)
+# print(f"array a : \n {a}")
+# print(f"array b : \n {b}")
+# print(f"Matrix multiplication:\n {dot_product} ")
+
+# a = np.matrix('10,20;30,40')
+# b = np.matrix('10 20;30 40')
+# print(f"type of a : {type(a)}")
+# print(f"type of b : {type(b)}")
+# print(f"Matrix object creation from string with comma : \n{a}")
+# print(f"Matrix object creation from string with space : \n{b}")
 
 
+# a = np.matrix([[10,20],[30,40]])
+# print(type(a))
+
+# a = np.arange(6).reshape(3,2)
+# b = np.matrix(a)
+# print(f"type of a : type(a)")
+# print(f"type of b : type(b)")
+# print(f'ndarray :\n {a}')
+# print(f'matrix :\n {b}')
+# print(type(a))
+# print(type(b))
 
 
+a1 = np.array([[10,20],[30,40]])
+a2 = np.array([[1,2],[3,4]])
+m1 = np.matrix([[10,20],[30,40]])
+m2 = np.matrix([[1,2],[3,4]])
+# addition_a = a+a
+# addition_m = m+m
+# print(f'ndarray addition :\n {addition_a}')
+# print(f'matrix addition :\n {addition_m}')
 
+# mul_a = a1*a2
+# mul_m = m1*m2
+# print(f'ndarray multiplication :\n {mul_a}')
+# print(f'matrix multiplication :\n {mul_m}')
+
+
+# a = np.array([[1,2],[3,4]])
+# ainv = np.linalg.inv(a)
+# print(f"Original Matrix :: \n {a}")
+# print(f"Inverse of the Matrix :: \n {ainv}")
+
+# x+y = 22
+# 3x+8y=101
+coef = np.array([[1,1],[3,8]])
+dep = np.array([22,101])
+result = np.linalg.solve(coef,dep)
+# print(f"Coefficient Matrix : \n {coef}")
+# print(f"Dependent Matrix : \n {dep}")
+print(f"Result array : {result}")
+# print(f"Type of result : {type(result)}")
