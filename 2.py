@@ -445,10 +445,10 @@ import numpy as np
 # print(type(b))
 
 
-a1 = np.array([[10,20],[30,40]])
-a2 = np.array([[1,2],[3,4]])
-m1 = np.matrix([[10,20],[30,40]])
-m2 = np.matrix([[1,2],[3,4]])
+# a1 = np.array([[10,20],[30,40]])
+# a2 = np.array([[1,2],[3,4]])
+# m1 = np.matrix([[10,20],[30,40]])
+# m2 = np.matrix([[1,2],[3,4]])
 # addition_a = a+a
 # addition_m = m+m
 # print(f'ndarray addition :\n {addition_a}')
@@ -460,17 +460,67 @@ m2 = np.matrix([[1,2],[3,4]])
 # print(f'matrix multiplication :\n {mul_m}')
 
 
-# a = np.array([[1,2],[3,4]])
+# a = np.array([[-3,5],[2,4]])
 # ainv = np.linalg.inv(a)
 # print(f"Original Matrix :: \n {a}")
-# print(f"Inverse of the Matrix :: \n {ainv}")
+# print(f"Inverse of the Matrix :: \n { }")
 
-# x+y = 22
-# 3x+8y=101
-coef = np.array([[1,1],[3,8]])
-dep = np.array([22,101])
-result = np.linalg.solve(coef,dep)
+#    x+y = 22
+# # 3x+8y=101
+# coef = np.array([[1,1],[3,8]])
+# dep = np.array([22,101])
+# result = np.linalg.solve(coef,dep)
 # print(f"Coefficient Matrix : \n {coef}")
 # print(f"Dependent Matrix : \n {dep}")
-print(f"Result array : {result}")
+# print(f"Result array : {result}")
 # print(f"Type of result : {type(result)}")
+
+
+# 5x + 8y  =200
+# 8x + 8y = 2400
+
+# coef = np.array([[5,8],[10,8]])
+# dep = np.array([200,240])
+# result = np.linalg.solve(coef,dep)
+# print(f"Coefficient Matrix : \n {coef}")
+# print(f"Dependent Matrix : \n {dep}")
+# print(f"Result array : {result}")
+# print(f"Type of result : {type(result)}")
+
+## 6/01/22
+
+# a = np.array([[10,20,30],[40,50,60]]) #2-D array with shape:(2,3)
+# # save object to a file
+# np.save('out',a)
+# # load object from a file
+# out_array = np.load('out.npy')
+# print(out_array)
+
+# Save several arrays into a single file in uncompressed .npz format.
+# a = np.array([[10,20,30],[40,50,60]]) 
+# b = np.array([[70,80],[90,100]]) 
+# np.savez('out.npz',a,b)
+
+# npzfileobj = np.load('out.npz') 
+# print(f"Type of the npzfileobj : {type(npzfileobj)}")
+# print(npzfileobj.files)
+# print(npzfileobj['arr_0'])
+# print(npzfileobj['arr_1'])
+
+
+# npzfileobj = np.load('out.npy') 
+# print(npzfileobj.files)
+# for i in npzfileobj:
+#     print(f"Name of the file : {i}")
+#     print("Contents in the file :")
+#     print(npzfileobj[i])   
+
+###Save txt 
+# a = np.array([[10,20,30],[40,50,60]]) #2-D array with shape:(2,3)
+# np.savetxt('out.txt',a,fmt='%.1f')
+# out_array1 = np.loadtxt('out.txt')
+# print(out_array1)
+
+# out_array2 = np.loadtxt('out.txt',dtype=int)
+# print(out_array2)
+
