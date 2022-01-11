@@ -475,17 +475,24 @@ import numpy as np
 # print(f"Result array : {result}")
 # print(f"Type of result : {type(result)}")
 
+# A = np.array([[2,-1,1], [3, 2, -1], [1, 4, 3]])
+# B = np.array([0,0,0])
+# print()
+# X = np.linalg.inv(A)#.dot(B)
+# X = np.linalg.solve(A,B)
+# print(X)
 
 # 5x + 8y  =200
 # 8x + 8y = 2400
-
-# coef = np.array([[5,8],[10,8]])
-# dep = np.array([200,240])
-# result = np.linalg.solve(coef,dep)
+# # 2x + 3y = 1000
+# coef = np.array([[5,8,0],[10,8,0],[2,2,0]])
+# dep = np.array([200,240,100])
+# # result = np.linalg.solve(coef,dep)
+# result = np.linalg.inv(coef).dot(dep)
 # print(f"Coefficient Matrix : \n {coef}")
 # print(f"Dependent Matrix : \n {dep}")
 # print(f"Result array : {result}")
-# print(f"Type of result : {type(result)}")
+# print(f"Type of result : {type(result)}") 
 
 ## 6/01/22
 
@@ -524,3 +531,15 @@ import numpy as np
 # out_array2 = np.loadtxt('out.txt',dtype=int)
 # print(out_array2)
 
+# 5x + 8y  =200
+# 8x + 8y = 2400
+# # 2x + 3y = 1000
+
+# coef = np.array([[1,3],[1,1],[1,-1]])
+# dep = np.array([60,10,0])
+# result = np.linalg.solve(coef,dep)
+# result = np.linalg.inv(coef).dot(dep)
+# print(f"Coefficient Matrix : \n {coef}")
+# print(f"Dependent Matrix : \n {dep}")
+# print(f"Result array : {result}")
+# print(f"Type of result : {type(result)}") 
