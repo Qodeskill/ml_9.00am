@@ -1,5 +1,10 @@
-create table SALES_ORDER_DETAILS(ORDERNO varchar(6) Foreign Key references ORDERNO of SALES_ORDER table, PRODUCTNO varchar(6)Foreign Key references PRODUCTNO of PRODUCT_MASTER table,QTYORDERD numeric(8),QTYDISP numeric(8),PRODUCTRATE DEC(10,2));
-
+create table SALES_ORDER_DETAILS (
+	ORDERNO varchar(6) references SALES_ORDER 
+	,PRODUCTNO varchar(6) references PRODUCT_MASTER 
+	,QTYORDERD numeric(8)
+	,QTYDISP numeric(8)
+	,PRODUCTRATE decimal(10, 2)
+	);
 
 insert into SALES_ORDER_DETAILS values('019001','P00001','4','4','525')
 insert into SALES_ORDER_DETAILS values('019001','P07965','2','1','8400');

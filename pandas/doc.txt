@@ -1,0 +1,43 @@
+pandas.Series
+class pandas.Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)[source]
+One-dimensional ndarray with axis labels (including time series).
+
+pd.read_csv('D:\\SQ_ML\\pandas\\Jupyter_python\\student.csv')
+
+import os
+print(os.getcwd())
+
+df =  pd.read_csv('student.csv')
+df.head() --> top 5 rows
+df.tail() --> bottom 5 rows
+df.columns
+
+df =  pd.read_csv('student.csv',true_values=['str'],false_values=['no'])
+df =  pd.read_csv('student.csv',na_values=['str'])
+df =  pd.read_csv('student.csv',na_values={'col':'str'})
+df =  pd.read_csv('student.csv',keep_default_na=False)
+df =  pd.read_csv('student.csv',na_filter=False)
+df.isnull().sum().sum()
+df.notnull()
+
+
+pd.read_csv('student.csv',nrows=2)
+
+index_col
+
+
+1. read_csv()
+2. head()
+3. describe()
+4. memory_usage()
+5. astype()
+6. loc[:]
+7. to_datetime()
+8. value_counts()
+9. drop_duplicates()
+10. groupby()
+11. merge()
+12. sort_values()
+13. fillna()
+14. replace()
+15. join
