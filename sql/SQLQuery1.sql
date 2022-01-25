@@ -27,8 +27,6 @@ ORDER BY
     o.customer_id,
     order_date;
 
-
-
 select description,SELLPRICE from PRODUCT_MASTER
 where EXISTS(
 select productno from SALES_ORDER_DETAILS
