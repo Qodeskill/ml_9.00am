@@ -388,8 +388,7 @@ plt.show()
 # plot)
 # --> loc=(v1,v2) -> lowest corner of Legend box
 
-            # 0 1               1 1
-
+            # 0 1                1 1
 
 
 
