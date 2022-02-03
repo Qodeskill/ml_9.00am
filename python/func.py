@@ -7,5 +7,5 @@ def square1(a): # function defination
 def square2(a): # function defination
     return a*a    
 
-square1(10)+50 #function call
+square1(10) #function call
 print(square2(10)+50) #function call
