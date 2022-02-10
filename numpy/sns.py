@@ -3,7 +3,15 @@
 # 1 2 3 4 5 6
 # 1 4 12     
 
-# 
+# n=1
+# for i in range(1,6):
+#     print(n,end=" ")
+#     n= n+n
+
+n=0.5
+for i in range(0,6):
+    print(n,end=" ")
+    n+=i+0.5
 
 # for i in range(5):
 
